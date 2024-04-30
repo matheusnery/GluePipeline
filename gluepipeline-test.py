@@ -12,6 +12,7 @@ spark = glueContext.spark_session
 job = Job(glueContext)
 job.init(args['JOB_NAME'], args)
 print("TESTANDO")
+
 print("TESTANDO")
 # Script generated for node Amazon S3
 AmazonS3_node1714505214359 = glueContext.create_dynamic_frame.from_options(format_options={"quoteChar": "\"", "withHeader": True, "separator": ",", "optimizePerformance": False}, connection_type="s3", format="csv", connection_options={"paths": ["s3://aw-glue-store-tutorial/data-store/annual-report/annual-enterprise-survey-2021-financial-year-provisional-csv.csv"], "recurse": True}, transformation_ctx="AmazonS3_node1714505214359")
