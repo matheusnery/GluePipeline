@@ -6,12 +6,12 @@ Resources:
       Role: !GetAtt GlueServiceRole.Arn
       Command:
         Name: glueetl
-        ScriptLocation: s3://mycodepipelinebucket-demo/script/glue_script.py
+        ScriptLocation: s3://aws-glue-assets-692188676507-us-east-1/scripts/gluepipeline-test.py
       DefaultArguments:
         "--TempDir": "s3://mycodepipelinebucket-demo/temp/"
       GlueVersion: "2.0"
       WorkerType: G.1X
-      NumberOfWorkers: 3
+      NumberOfWorkers: 2
 
 
   GlueServiceRole:
