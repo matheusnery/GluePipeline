@@ -8,8 +8,8 @@ jobs:
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
-          aws-access-key-id: AKIA2CKNJAGN4ZBECMGO
-          aws-secret-access-key: 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
+          aws-access-key-id: 
+          aws-secret-access-key: 
           aws-region: us-east-1
       - name: Upload the Glue code to s3
         run: aws s3 cp ./gluepipeline-test.py s3://aws-glue-assets-692188676507-us-east-1/scripts/
